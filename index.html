@@ -13,21 +13,8 @@
     <!-- daisyui + tailwind css cdn   -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script> 
-    <!-- custom css  -->
-     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
-          }
-        }
-      </script>
       <!-- css  -->
        <style>
-        *{
             *{
                 margin: 0;
                 padding: 0;
@@ -44,12 +31,6 @@
             p{
               font-size: 1.25rem;
             }
-            @media screen and (min-width:600px) {
-              .col-extend{
-                width: 570px;
-              }
-            }
-        }
        </style>
     <style>
 
@@ -111,7 +92,7 @@
               <li><a>Blogs</a></li>    
               <li><a>Contact Us</a></li>
             </div>
-            <div class="flex items-center hidden lg:flex">
+            <div class="lg:flex items-center hidden">
             <p class=" me-3 text-2xl flex justify-center items-center p-4 rounded-full bg-white hover:bg-red-50"><i class="rounded-full fa-solid fa-magnifying-glass"></i></p>
             <p class=" ms text-2xl flex justify-center items-center p-4 rounded-full bg-white hover:bg-red-50"><i class="bg-white fa-solid fa-cart-shopping"></i></p>
             <a class=" ms-2 btn bg-green rounded-full font-bold text-xl hidden lg:flex h-14">Book Consult<span class="p-2 ms-3 bg-black rounded-full h-8 w-8 flex items-center justify-center"><i class=" -rotate-45 fa-solid fa-arrow-right inline-block text-white"></i></span></a>
@@ -133,14 +114,14 @@
 
     <!-- about section start  -->
      <main class="mx-auto">
-      <section class="bg-purple-50">
-        <div class="container lg:grid grid-cols-2 gap-10 py-24 mx-auto">
+      <section class="bg-purple-50 p-10">
+        <div class="container lg:grid grid-cols-2 gap-10 lg:py-24 mx-auto">
          <div>
           <div class="relative w-96">
-            <img class="mb-10 absolute right-80 bottom-4" src="assets/Vector.png" alt="">  
+            <img class=" hidden lg:flex mb-10 absolute right-80 bottom-4" src="assets/Vector.png" alt="">  
             <h3 class="relative bg-white py-2 px-3 rounded-2xl w-32"><span><i class=" fa-solid fa-arrow-right me-2"></i></span>About Us</h3>
           </div>
-          <h2 class="lg:text-4xl font-extrabold  text-slate-900 my-4">We design thoughtful, <br> liveable spaces</h2>
+          <h2 class="lg:text-4xl text-2xl font-extrabold  text-slate-900 my-4">We design thoughtful, <br> liveable spaces</h2>
           <p>The barn house captivates with its blend of rustic charm and 
             modern sophistication, featuring weathered wood, sleek metal accents.</p>
             <div>
@@ -170,11 +151,11 @@
       <!-- work section start  -->
        <section class="bg-purple-50 pb-10">
         <div class="container mx-auto">
-          <h3 class="bg-white py-2 px-3 rounded-2xl w-40 mx-auto"><span><i class=" fa-solid fa-arrow-right me-2"></i></span>How we works</h3>
-          <h2 class="lg:text-4xl font-extrabold  text-slate-900 text-center mt-2">Our Works Process</h2>
-          <p class="text-center w-3/4 mx-auto my-8">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+          <h3 class="hover:bg-green-100 bg-yellow-100 py-2 px-3 rounded-2xl w-40 mx-auto font-bold"><span><i class=" fa-solid fa-arrow-right me-2"></i></span>How we works</h3>
+          <h2 class="lg:text-4xl text-2xl font-extrabold  text-slate-900 text-center mt-5">Our Works Process</h2>
+          <p class="text-center lg:w-3/5 mx-auto lg:mt-0 mt-3 lg:mb-5 px-5">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
   
-          <div class="lg:grid grid-cols-4 mx-auto gap-5">
+          <div class="lg:grid grid-cols-4 mx-auto gap-5 px-5">
               <div class=" h-60 bg-red-300 p-5 py-5 rounded-xl mt-5">
                 <img src="assets/concept.png" alt="">
                 <h3 class="taxt-xl font-bold my-3">Concept</h3>
@@ -202,41 +183,59 @@
        <!-- letest portfolio section start  -->
         <section>
           <div class="container my-10 pt-10 mx-auto w-4/5">
-            <h3 class="text-center bg-yellow-50 mx-auto mb-5 py-2 px-3 rounded-2xl w-64"><span><i class=" fa-solid fa-arrow-right me-2"></i></span>Explore our lestest work</h3>
-            <h2 class="lg:text-4xl font-extrabold  text-slate-900 text-center mt-2">Our Latest Portfolio</h2>
-            <p class="text-center lg:w-3/5 mx-auto mt-3">The barn house captivates with its blend of rustic charm and  modern sophistication, featuring weathered wood, sleek metal accents.</p>
-              
-            <div class="grid grid-cols-1 lg:grid-cols-4 my-10 gap-5 lg:w-4/5 mx-auto">
-              <div  class="lg:col-span-3 lg:flex p-5 gap-4 items-center shadow border border-gray-100 rounded-xl">      
-                <img class="w-full lg:w-auto lg:h-32" src="assets/img4.png" alt="">
+            <h3 class="text-center font-bold hover:bg-green-100 bg-yellow-100 mx-auto mb-5 py-2 px-3 rounded-2xl w-64"><span><i class=" fa-solid fa-arrow-right me-2"></i></span>Explore our lestest work</h3>
+            <h2 class="lg:text-4xl text-2xl font-extrabold  text-slate-900 text-center my-5">Our Latest Portfolio</h2>
+            <p class="text-center lg:w-3/5 mx-auto lg:mt-0 mt-3 lg:mb-5">The barn house captivates with its blend of rustic charm and  modern sophistication, featuring weathered wood, sleek metal accents.</p>
+             
+            <div class="grid lg:grid-cols-12 lg:my-20 my-10 gap-5">
+              <div class="lg:flex items-center gap-3 lg:col-span-9 col-span-12 p-5 border border-gray-200 shadow rounded-2xl">
+                <img class="w-full lg:w-auto lg:h-auto" src="assets/img1.png" alt="">
                 <div>
-                  <h3>Commercial</h3>
-                  <p>The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern . </p>              
+                  <h3 class="text-xl font-bold lg:mt-0 mt-3">Commercial</h3>
+                  <p class="my-3">The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern . </p>
+                  <a class="font-boldtext-lg rounded-3xl text-xl font-bold">View Details<span><i class=" -rotate-45 fa-solid fa-arrow-right bg-green rounded-full p-2 ms-3"></i></span></a>  
                 </div>
               </div>
-              
-              <img class="p-5 border-gray-100 rounded-xl shadow w-full flex justify-end lg:w-auto lg:h-44" src="assets/img2.png" alt="">
-      
-              <div class="">
-                <img class="p-5 border-gray-100 rounded-xl shadow w-full lg:w-auto lg:h-44" src="assets/img3.png" alt="">
-              </div>
-              <div  class="lg:col-span-2 col-extend lg:flex p-5 gap-4 items-center shadow border border-gray-100 rounded-xl">      
-                <img class="w-full lg:w-auto lg:h-32" src="assets/img4.png" alt="">
-                <div>
-                  <h3>Commercial</h3>
-                  <p>The barn house captivates with its blend of rustic charm and modern. </p>              
+                
+              <img class="lg:col-span-3 col-span-12 p-5 border border-gray-200 shadow rounded-2xl" src="assets/img2.png" alt="">
+                <img class="col-span-12 lg:col-span-2 w-full lg:w-auto lg:h-56 p-5 border border-gray-200 shadow rounded-2xl" src="assets/img3.png " alt="">
+                <div class="lg:flex items-center gap-3 lg:col-span-8 col-span-12 p-5 border border-gray-200 shadow rounded-2xl">
+                  <img class="w-full lg:w-auto" src="assets/img4.png" alt="">
+                  <div>
+                    <h3 class="text-xl font-bold lg:mt-0 mt-3">Commercial</h3>
+                    <p class="my-3">The barn house captivates with its blend of rustic charm and modern.</p>
+                    <a class="font-boldtext-lg rounded-3xl text-xl font-bold">View Details<span><i class=" -rotate-45 fa-solid fa-arrow-right bg-green rounded-full p-2 ms-3"></i></span></a>  
+                  </div>
                 </div>
+                <img class="w-full lg:h-56 lg:w-auto lg:flex items-center gap-3 lg:col-span-2 col-span-12 p-5 border border-gray-200 shadow rounded-2xl" src="assets/img5.png" alt="">
               </div>
-                <div class="lg:flex justify-end">
-                  <img class="p-5 border-gray-100 rounded-xl shadow w-full lg:w-auto lg:h-44" src="assets/img5.png" alt="">
-                </div>
-            </div>
         </section>
        <!-- letest portfolio section end  -->
+        <!----------------------- 
+             challenging part 
+           ---------------------->
+           <!-- happy clients section start  -->
+           <section class="container mx-auto">
+            <h2 class="lg:text-4xl text-2xl font-extrabold text-slate-900 text-center mt-2">Our Partners</h2>
+            <div class="grid lg:grid-cols-5 grid-cols-2 p-10 lg:w-6/12 w-11/12 mx-auto gap-3 my-10">
+              <img class="p-3 border hover:border-red-300  border-gray-200 shadow rounded-2xl h-32 w-32" src="assets/p-hero.png" alt="">
+              <img class="p-3 border hover:border-red-300  border-gray-200 shadow rounded-2xl h-32 w-32" src="assets/rokomary.png" alt="">
+              <img class="p-3 border hover:border-red-300  border-gray-200 shadow rounded-2xl h-32 w-32" src="assets/hero.png" alt="">
+              <img class="p-3 border hover:border-red-300  border-gray-200 shadow rounded-2xl h-32 w-32" src="assets/brac-logo-big.png" alt="">
+              <img class="p-3 border hover:border-red-300  border-gray-200 shadow rounded-2xl h-32 w-32" src="assets/bay.png" alt="">
+              <img class="p-3 border hover:border-red-300  border-gray-200 shadow rounded-2xl h-32 w-32" src="assets/ostad.png" alt="">
+              <img class="p-3 border hover:border-red-300  border-gray-200 shadow rounded-2xl h-32 w-32" src="assets/gozayan.jpg" alt="">
+              <img class="p-3 border hover:border-red-300  border-gray-200 shadow rounded-2xl h-32 w-32" src="assets/ghorerbazar.png" alt="">
+              <img class="p-3 border hover:border-red-300  border-gray-200 shadow rounded-2xl h-32 w-32" src="assets/oraimo (1).png" alt="">
+              <img class="p-3 border hover:border-red-300  border-gray-200 shadow rounded-2xl h-32 w-32" src="assets/walton.png" alt="">
+            </div>
+          </section>  
+           <!-- happy clients section end  -->
+        <!-- contact section end  -->
         <!-- contact section start  -->
          <section class="contact">
-            <div class="container my-20 lg:w-4/5 mx-auto py-10 px-5">
-              <h3 class="text-center bg-yellow-50 mx-auto mb-5 py-2 px-3 rounded-2xl w-60"><span><i class=" fa-solid fa-arrow-right me-2"></i></span>Let's contact</h3>
+            <div class="container my-20 lg:w-2/3 mx-auto py-10 px-5">
+              <h3 class="text-center font-bold hover:bg-green-100 bg-yellow-100 mx-auto mb-5 py-2 px-3 rounded-2xl w-60"><span><i class=" fa-solid fa-arrow-right me-2"></i></span>Let's contact</h3>
               <h2 class="lg:text-3xl font-bold text-slate-900 text-center mt-2">Let’s Discuss Next Project</h2>
               <p class="text-center lg:w-3/5 mx-auto mt-3">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents<p>
               <div class="grid lg:grid-cols-2 grid-cols-1 gap-5 mt-20 mb-5">
@@ -264,28 +263,6 @@
               <a class="btn bg-green border-none font-bold text-lg w-full rounded-full">Send Mail<span class="p-2 ms-3 bg-black rounded-full h-7 w-7 flex items-center justify-center"><i class=" -rotate-45 fa-solid fa-arrow-right inline-block text-white"></i></span></a>
             </div>
          </section>
-
-         <!----------------------- 
-             challenging part 
-           ---------------------->
-           <!-- happy clients section start  -->
-           <section class="container mx-auto">
-            <h2 class="lg:text-4xl font-extrabold text-slate-900 text-center mt-2">Our Happy Clients</h2>
-            <div class="grid lg:grid-cols-5 grid-cols-2 p-10 lg:w-6/12 w-11/12 mx-auto gap-3 my-10">
-              <img class="p-3 border hover:border-red-300  border-gray-200 shadow rounded-2xl h-32 w-32" src="assets/p-hero.png" alt="">
-              <img class="p-3 border hover:border-red-300  border-gray-200 shadow rounded-2xl h-32 w-32" src="assets/rokomary.png" alt="">
-              <img class="p-3 border hover:border-red-300  border-gray-200 shadow rounded-2xl h-32 w-32" src="assets/hero.png" alt="">
-              <img class="p-3 border hover:border-red-300  border-gray-200 shadow rounded-2xl h-32 w-32" src="assets/brac-logo-big.png" alt="">
-              <img class="p-3 border hover:border-red-300  border-gray-200 shadow rounded-2xl h-32 w-32" src="assets/bay.png" alt="">
-              <img class="p-3 border hover:border-red-300  border-gray-200 shadow rounded-2xl h-32 w-32" src="assets/ostad.png" alt="">
-              <img class="p-3 border hover:border-red-300  border-gray-200 shadow rounded-2xl h-32 w-32" src="assets/gozayan.jpg" alt="">
-              <img class="p-3 border hover:border-red-300  border-gray-200 shadow rounded-2xl h-32 w-32" src="assets/ghorerbazar.png" alt="">
-              <img class="p-3 border hover:border-red-300  border-gray-200 shadow rounded-2xl h-32 w-32" src="assets/oraimo (1).png" alt="">
-              <img class="p-3 border hover:border-red-300  border-gray-200 shadow rounded-2xl h-32 w-32" src="assets/walton.png" alt="">
-            </div>
-          </section>  
-           <!-- happy clients section start  -->
-        <!-- contact section end  -->
      </main>
      <footer class="bg-[#1C1C1C] py-20">
       <h3 class="flex justify-center items-center"><span><i class=" -rotate-45 fa-solid fa-arrow-right me-2 h-7 w-7 flex justify-center items-center lg:p-5 p-2 bg-green rounded-full"></i></span><span class="font-bold lg:text-2xl text-xl text-white">Rinterio</span></h3>
